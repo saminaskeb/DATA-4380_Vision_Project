@@ -32,11 +32,8 @@ MobileNetV2 achieved ~45% accuracy after fine-tuning on a balanced subset of 400
   * Applied normalization (rescale=1./255) and basic augmentations for training
 
 * Data Visualization
-Plotted random samples from each class
+<img width="1169" height="593" alt="image" src="https://github.com/user-attachments/assets/289771a2-69a4-4fc5-a3ea-e6cba1a2816a" />
 
-Created class distribution bar charts
-
-(Optional: Insert matplotlib figures here if desired)
 
 ### Problem Formulation
 
@@ -94,10 +91,6 @@ Created class distribution bar charts
 * Download UTKFace from: https://susanqq.github.io/UTKFace/
 * Place images in a Google Drive folder
 * Run Final Vision Project.ipynb to preprocess into class folders with balanced samples
-
-### Training
-
-* Describe how to train the model
 
 ### Performance Evaluation
 
