@@ -57,10 +57,9 @@ MobileNetV2 achieved ~45% accuracy after fine-tuning on a balanced subset of 400
 (Insert training/validation accuracy/loss plots here if available)
 
 ### Performance Comparison
+<img width="286" height="73" alt="Screenshot 2025-07-31 at 3 58 50 AM" src="https://github.com/user-attachments/assets/8831dc38-92f3-4ab9-a6c6-3ffc517878e5" />
+<img width="1001" height="701" alt="image" src="https://github.com/user-attachments/assets/ced06377-6399-42bf-a85b-b2e5a12766cb" />
 
-* Clearly define the key performance metric(s).
-* Show/compare results in one table.
-* Show one (or few) visualization(s) of results, for example ROC curves.
 
 ### Conclusions
 
