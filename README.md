@@ -6,14 +6,14 @@
 
 ## Overview
 
-* Definition of the task / challenge
+* **Definition of the task / challenge**:
 The task is to classify human race categories from facial image data, using the UTKFace dataset. Each image is labeled with age, gender, and race, and we focus solely on race prediction as a multiclass classification task with 5 classes.
 
-* Your approach
+* **Your approach**:
 We treat this as an image classification problem. Pretrained convolutional neural networks (CNNs) — MobileNetV2, ResNet50, and EfficientNetB0 — were used via transfer learning. We froze the base layers initially, trained a custom classifier head, then later fine-tuned upper base layers for improved performance.
 
-* Summary of the performance achieved
-MobileNetV2 achieved ~45% accuracy after fine-tuning on a balanced subset of 300 images per class. Other models like ResNet50 and EfficientNetB0 performed less optimally on this specific subset.
+* **Summary of the performance achieved**:
+MobileNetV2 achieved ~45% accuracy after fine-tuning on a balanced subset of 400 images per class. Other models like ResNet50 and EfficientNetB0 performed less optimally on this specific subset.
 
 ## Summary of Workdone
 
