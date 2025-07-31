@@ -17,8 +17,6 @@ MobileNetV2 achieved ~45% accuracy after fine-tuning on a balanced subset of 400
 
 ## Summary of Workdone
 
-Include only the sections that are relevant an appropriate.
-
 ### Data
 
 * Data:
@@ -101,7 +99,7 @@ Created class distribution bar charts
 
 * Describe how to train the model
 
-#### Performance Evaluation
+### Performance Evaluation
 
 * Metrics: Accuracy, ROC curve,
 
