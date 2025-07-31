@@ -22,36 +22,44 @@ Include only the sections that are relevant an appropriate.
 ### Data
 
 * Data:
-  * Type: For example
-    * Input: medical images (1000x1000 pixel jpegs), CSV file: image filename -> diagnosis
-    * Input: CSV file of features, output: signal/background flag in 1st column.
-  * Size: How much data?
-  * Instances (Train, Test, Validation Split): how many data points? Ex: 1000 patients for training, 200 for testing, none for validation
+  * Input: UTKFace dataset — JPEG facial images, around 200x200 pixels
+  * Output: One of 5 race classes (0 to 4)
+  * Size: Original dataset contains ~11000 images
+  * Split used: 400 images per class (total ~1600), split into 80% train / 20% validation
 
-#### Preprocessing / Clean up
+* Preprocessing / Clean-up
+  * Filenames were parsed to extract race labels (format: age_gender_race_date.jpg)
+  * Removed corrupted or unreadable images
+  * Created directory structure for Keras flow: /race_id/image.jpg
+  * Applied normalization (rescale=1./255) and basic augmentations for training
 
-* Describe any manipulations you performed to the data.
+* Data Visualization
+Plotted random samples from each class
 
-#### Data Visualization
+Created class distribution bar charts
 
-Show a few visualization of the data and say a few words about what you see.
+(Optional: Insert matplotlib figures here if desired)
 
 ### Problem Formulation
 
-* Define:
-  * Input / Output
-  * Models
-    * Describe the different models you tried and why.
-  * Loss, Optimizer, other Hyperparameters.
+* Input / Output
+
+  * Input: RGB facial images resized to 224x224
+  * Output: Integer label for race class (0 to 4)
+
+* Models Used
+  * MobileNetV2 (baseline + fine-tuning)
+  * ResNet50
+  * EfficientNetB0
 
 ### Training
 
-* Describe the training:
-  * How you trained: software and hardware.
-  * How did training take.
-  * Training curves (loss vs epoch for test/train).
-  * How did you decide to stop training.
-  * Any difficulties? How did you resolve them?
+* Environment: Trained in Google Colab with GPU enabled
+* Time: ~5 minutes per model for frozen base, ~10–15 minutes for fine-tuned
+* Early stopping used to avoid overfitting
+* Difficulties: Low accuracy initially with small sample size, resolved by increasing sample to 300/class and tuning augmentations
+* Training curves were plotted for all models
+(Insert training/validation accuracy/loss plots here if available)
 
 ### Performance Comparison
 
@@ -61,12 +69,14 @@ Show a few visualization of the data and say a few words about what you see.
 
 ### Conclusions
 
-* State any conclusions you can infer from your work. Example: LSTM work better than GRU.
+* MobileNetV2 consistently outperformed the others on this dataset
+* Simpler or more efficient models seem better suited to this relatively small, imbalanced dataset
+* Transfer learning is effective, but heavily influenced by data quantity and quality
 
 ### Future Work
 
-* What would be the next thing that you would try.
-* What are some other studies that can be done starting from here.
+* Expand dataset to use full UTKFace or synthetic augmentation
+* Explore multi-label prediction (e.g., race + gender)
 
 ## How to reproduce results
 
