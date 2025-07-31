@@ -1,6 +1,6 @@
 ![](UTA-DataScience-Logo.png)
 
-# Project Title
+# Race Classification Using Transfer Learning
 
 * **One Sentence Summary**: This repository implements and compares transfer learning models for classifying race from facial images using the UTKFace dataset. 
 
