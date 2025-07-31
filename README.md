@@ -2,14 +2,18 @@
 
 # Project Title
 
-* **One Sentence Summary** This repository implements and compares transfer learning models for classifying race from facial images using the UTKFace dataset. 
+* **One Sentence Summary**: This repository implements and compares transfer learning models for classifying race from facial images using the UTKFace dataset. 
 
 ## Overview
 
-* This section could contain a short paragraph which include the following:
-  * **Definition of the tasks / challenge**  Ex: The task, as defined by the Kaggle challenge is to use a time series of 12 features, sampled daily for 1 month, to predict the next day's price of a stock.
-  * **Your approach** Ex: The approach in this repository formulates the problem as regression task, using deep recurrent neural networks as the model with the full time series of features as input. We compared the performance of 3 different network architectures.
-  * **Summary of the performance achieved** Ex: Our best model was able to predict the next day stock price within 23%, 90% of the time. At the time of writing, the best performance on Kaggle of this metric is 18%.
+* Definition of the task / challenge
+The task is to classify human race categories from facial image data, using the UTKFace dataset. Each image is labeled with age, gender, and race, and we focus solely on race prediction as a multiclass classification task with 5 classes.
+
+* Your approach
+We treat this as an image classification problem. Pretrained convolutional neural networks (CNNs) — MobileNetV2, ResNet50, and EfficientNetB0 — were used via transfer learning. We froze the base layers initially, trained a custom classifier head, then later fine-tuned upper base layers for improved performance.
+
+* Summary of the performance achieved
+MobileNetV2 achieved ~45% accuracy after fine-tuning on a balanced subset of 300 images per class. Other models like ResNet50 and EfficientNetB0 performed less optimally on this specific subset.
 
 ## Summary of Workdone
 
