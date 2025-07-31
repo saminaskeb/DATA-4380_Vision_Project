@@ -79,9 +79,6 @@ MobileNetV2 achieved ~45% accuracy after fine-tuning on a balanced subset of 400
 ### Overview of files in repository
 
 * Final Vision Project.ipynb
-* race_classifier_mobilenetv2.h5 — MobileNetV2 baseline
-* race_model_with_augmentation.h5 — MobileNetV2 with image augmentation
-* race_model_efficientnetb0.h5 — EfficientNetB0
 
 ### Data
 
