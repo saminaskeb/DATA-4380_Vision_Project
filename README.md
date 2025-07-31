@@ -50,8 +50,6 @@ MobileNetV2 achieved ~45% accuracy after fine-tuning on a balanced subset of 400
 ### Training
 
 * Environment: Trained in Google Colab with GPU enabled
-* Time: ~5 minutes per model for frozen base, ~10–15 minutes for fine-tuned
-* Early stopping used to avoid overfitting
 * Difficulties: Low accuracy initially with small sample size, resolved by increasing sample to 300/class and tuning augmentations
 * Training curves were plotted for all models
 (Insert training/validation accuracy/loss plots here if available)
