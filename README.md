@@ -80,38 +80,22 @@ Created class distribution bar charts
 
 ## How to reproduce results
 
-* In this section, provide instructions at least one of the following:
-   * Reproduce your results fully, including training.
-   * Apply this package to other data. For example, how to use the model you trained.
-   * Use this package to perform their own study.
-* Also describe what resources to use for this package, if appropirate. For example, point them to Collab and TPUs.
+* Run in Google Colab (GPU recommended)
+* Download UTKFace dataset and place in /content/drive/MyDrive/UTKFace
+* Follow these notebooks in order:
 
 ### Overview of files in repository
 
-* Describe the directory structure, if any.
-* List all relavent files and describe their role in the package.
-* An example:
-  * utils.py: various functions that are used in cleaning and visualizing data.
-  * preprocess.ipynb: Takes input data in CSV and writes out data frame after cleanup.
-  * visualization.ipynb: Creates various visualizations of the data.
-  * models.py: Contains functions that build the various models.
-  * training-model-1.ipynb: Trains the first model and saves model during training.
-  * training-model-2.ipynb: Trains the second model and saves model during training.
-  * training-model-3.ipynb: Trains the third model and saves model during training.
-  * performance.ipynb: loads multiple trained models and compares results.
-  * inference.ipynb: loads a trained model and applies it to test data to create kaggle submission.
-
-* Note that all of these notebooks should contain enough text for someone to understand what is happening.
-
-### Software Setup
-* List all of the required packages.
-* If not standard, provide or point to instruction for installing the packages.
-* Describe how to install your package.
+* Final Vision Project.ipynb
+* race_classifier_mobilenetv2.h5 — MobileNetV2 baseline
+* race_model_with_augmentation.h5 — MobileNetV2 with image augmentation
+* race_model_efficientnetb0.h5 — EfficientNetB0
 
 ### Data
 
-* Point to where they can download the data.
-* Lead them through preprocessing steps, if necessary.
+* Download UTKFace from: https://susanqq.github.io/UTKFace/
+* Place images in a Google Drive folder
+* Run Final Vision Project.ipynb to preprocess into class folders with balanced samples
 
 ### Training
 
@@ -119,12 +103,13 @@ Created class distribution bar charts
 
 #### Performance Evaluation
 
-* Describe how to run the performance evaluation.
+* Metrics: Accuracy, ROC curve,
 
 
 ## Citations
 
-* Provide any references.
+* UTKFace Dataset: Zhang, Q. et al. (2017). UTKFace Dataset.
+* TensorFlow / Keras Documentation
 
 
 
