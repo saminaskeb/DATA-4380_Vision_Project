@@ -53,6 +53,8 @@ MobileNetV2 achieved ~45% accuracy after fine-tuning on a balanced subset of 400
 
 ### Performance Comparison
 <img width="286" height="73" alt="Screenshot 2025-07-31 at 3 58 50 AM" src="https://github.com/user-attachments/assets/8831dc38-92f3-4ab9-a6c6-3ffc517878e5" />
+<img width="990" height="451" alt="image" src="https://github.com/user-attachments/assets/f926e360-cf06-41a2-b4e4-2e14e7849cc1" />
+
 <img width="1001" height="701" alt="image" src="https://github.com/user-attachments/assets/ced06377-6399-42bf-a85b-b2e5a12766cb" />
 
 
